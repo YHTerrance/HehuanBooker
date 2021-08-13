@@ -1,6 +1,6 @@
 *.png
 .vscode
-myconfig.py
+config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
