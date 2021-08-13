@@ -1,5 +1,6 @@
 *.png
 .vscode
+.history
 config.py
 
 # Byte-compiled / optimized / DLL files

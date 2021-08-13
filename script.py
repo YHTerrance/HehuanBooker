@@ -53,12 +53,15 @@ if __name__ == "__main__":
 
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
+    options.add_argument('--force-device-scale-factor=1')
 
     browser = webdriver.Chrome(
         options=options,
         executable_path=CHROME_DRIVER_PATH)
 
     browser.get(TARGET_URL)
+
+    browser.set_window_size(1024, 768)
 
     browser.find_element_by_id("accept").click()
     browser.find_element_by_id("btn_agree").click()
